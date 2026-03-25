@@ -2,4 +2,4 @@
 Jenkins pipeline with s3 assets.
 <br>
 Documentation in progress.
-Test 6.
+Test 7.
