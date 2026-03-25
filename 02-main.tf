@@ -19,7 +19,7 @@ resource "aws_s3_object" "repo_links" {
   key    = "repo_links.md"
   source = "${path.module}/s3_objects/repo_links.md"
 
-  etag   = filemd5("${path.module}/s3_objects/repo_links.md")
+  etag   = filemd5("${path.root}/s3_objects/repo_links.md")
 
   content_type = "text/markdown"
 }
@@ -33,7 +33,7 @@ resource "aws_s3_object" "repo_validation" {
   key    = "repo_validation.png"
   source = "${path.module}/s3_objects/repo_validation.png"
 
-  etag   = filemd5("${path.module}/s3_objects/repo_validation.png")
+  etag   = filemd5("${path.root}/s3_objects/repo_validation.png")
 
   content_type = "image/png"
 }
