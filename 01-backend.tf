@@ -8,7 +8,6 @@ terraform {
     bucket       = "kirkdevsecops-terraform-state"
     key          = "jenkins/dev/jenkins_gcheck/terraform.tfstate"
     region       = "us-west-2"
-    use_lockfile = false
     encrypt      = true
   }
 }
