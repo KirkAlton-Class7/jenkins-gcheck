@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/KirkAlton-Class7/jenkins-s3-test' 
+                git branch: 'main', url: 'https://github.com/KirkAlton-Class7/jenkins-gcheck' 
             }
         }
 
