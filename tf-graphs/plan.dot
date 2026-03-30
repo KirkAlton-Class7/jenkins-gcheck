@@ -1,0 +1,20 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_s3_bucket.frontend (expand)" [label = "aws_s3_bucket.frontend", shape = "box"]
+		"[root] aws_s3_bucket_public_access_block.frontend (expand)" [label = "aws_s3_bucket_public_access_block.frontend", shape = "box"]
+		"[root] aws_s3_object.frontend_files (expand)" [label = "aws_s3_object.frontend_files", shape = "box"]
+		"[root] data.aws_iam_policy_document.public_read_objects (expand)" [label = "data.aws_iam_policy_document.public_read_objects", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] aws_s3_bucket.frontend (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_s3_bucket_public_access_block.frontend (expand)" -> "[root] aws_s3_bucket.frontend (expand)"
+		"[root] aws_s3_object.frontend_files (expand)" -> "[root] aws_s3_bucket.frontend (expand)"
+		"[root] aws_s3_object.frontend_files (expand)" -> "[root] local.s3_objects (expand)"
+		"[root] data.aws_iam_policy_document.public_read_objects (expand)" -> "[root] aws_s3_bucket.frontend (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_s3_bucket_public_access_block.frontend (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_s3_object.frontend_files (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] data.aws_iam_policy_document.public_read_objects (expand)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+	}
+}
