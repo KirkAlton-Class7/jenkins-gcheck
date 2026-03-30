@@ -21,6 +21,16 @@ resource "aws_s3_bucket_public_access_block" "frontend" {
 }
 
 # ----------------------------------------------------------------
+# S3 Bucket Policy - Public Read Access
+# ----------------------------------------------------------------
+resource "aws_s3_bucket_policy" "frontend" {
+  bucket = aws_s3_bucket.frontend.id
+  policy = data.aws_iam_policy_document.public_read_objects.json
+  
+  depends_on = [aws_s3_bucket_public_access_block.frontend]
+}
+
+# ----------------------------------------------------------------
 # S3 Object - Upload Pipeline & Audit Artifacts
 # ----------------------------------------------------------------
 resource "aws_s3_object" "frontend_files" {
