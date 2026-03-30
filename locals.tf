@@ -36,12 +36,6 @@ locals {
     # Stage 2 - Audit & Verification Artifacts
     # ----------------------------------------------------
 
-    # Deployment Result
-    "aws-s3-bucket-deployment-result.png" = {
-      content_type = "image/png"
-      stage        = "audit"
-    }
-
     # Proof of pipeline success
     "jenkins-terraform-deployment-success.png" = {
       content_type = "image/png"

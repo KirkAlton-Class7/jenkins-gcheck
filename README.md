@@ -16,12 +16,6 @@
 
 ---
 
-## Infrastructure Deployment and Verification
-
-### Terraform Deployment Result
-
-- [S3 Bucket Deployment Result](https://jenkins-gcheck-bucket-20260325033932497000000001.s3.amazonaws.com/audit/aws-s3-bucket-deployment-result.png)
-
 ### Jenkins Execution
 
 - [Jenkins Terraform Deployment Success](https://jenkins-gcheck-bucket-20260325033932497000000001.s3.amazonaws.com/audit/jenkins-terraform-deployment-success.png)
