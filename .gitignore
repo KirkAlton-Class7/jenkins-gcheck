@@ -40,7 +40,6 @@ venv/
 
 # Project dirs
 backup/
-audit/
 
 # Rendered templates
 rendered/*
