@@ -1,0 +1,12 @@
+[
+    "audit/aws-s3-bucket-deployment-result.png",
+    "audit/console-output.txt",
+    "audit/jenkins-pipeline-execution-console.png",
+    "audit/jenkins-terraform-deployment-success.png",
+    "audit/s3-audit-screenshot.png",
+    "audit/s3-audit.json",
+    "pipeline/github-webhook-configuration.png",
+    "pipeline/jenkins-webhook-trigger-enabled.png",
+    "pipeline/repo_links.md",
+    "pipeline/repo_validation.png"
+]

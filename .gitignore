@@ -26,7 +26,6 @@ crash.*.log
 
 # Keys / secrets
 *.pem
-*.json
 !tests/event.json
 !tests/output.json
 
